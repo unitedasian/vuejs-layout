@@ -27,7 +27,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../../assets/scss/_vars";
+@import "../_scss/_vars";
 
 .topnav {
   align-items: flex-start;
@@ -95,4 +95,3 @@ export default {
   }
 }
 </style>
-

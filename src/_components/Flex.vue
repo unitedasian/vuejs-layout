@@ -50,9 +50,9 @@ export default {
   },
 
   computed: {
-    ...mapGetters({
-      sidebar: '$_layout/sidebar'
-    })
+    sidebar () {
+      return this.$store.getters.sidebar()
+    }
   },
 
   props: ['enableSidebar']
@@ -60,7 +60,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../../../assets/scss/_vars";
+@import "../_scss/_vars";
 
 .flex {
   align-items: stretch;

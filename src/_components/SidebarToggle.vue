@@ -9,12 +9,12 @@ import { mapGetters } from 'vuex'
 
 export default {
   computed: {
-    ...mapGetters({
-      sidebar: '$_layout/sidebar'
-    }),
+    sidebar () {
+      return this.$store.getters.sidebar()
+    },
 
     icon () {
-      return this.sidebarCollapsed
+      return this.sidebar === 'collapsed'
         ? 'fa fa-angle-double-right'
         : 'fa fa-angle-double-left'
     }
