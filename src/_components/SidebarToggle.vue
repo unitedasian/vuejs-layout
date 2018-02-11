@@ -8,7 +8,7 @@
 export default {
   computed: {
     sidebar () {
-      return this.$store.getters.sidebar
+      return this.$store.getters['$_layout/sidebar']
     },
 
     icon () {
