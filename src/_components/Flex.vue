@@ -38,8 +38,6 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-
 import Topnav from './Topnav'
 import Version from './Version'
 
