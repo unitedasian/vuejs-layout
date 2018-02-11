@@ -3,7 +3,7 @@ import getters from './getters'
 import mutations from './mutations'
 
 const state = {
-  sidebar: localStorage.getItem('uam.layout.sidebar') ? localStorage.getItem('uam.layout.sidebar') : 'expanded'
+  sidebar: null
 }
 
 export default {
