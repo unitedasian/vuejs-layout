@@ -697,7 +697,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   install(Vue) {
-    Vue.component('layout', __WEBPACK_IMPORTED_MODULE_0__Layout__["a" /* default */]);
+    Vue.component('Layout', __WEBPACK_IMPORTED_MODULE_0__Layout__["a" /* default */]);
   }
 });
 
