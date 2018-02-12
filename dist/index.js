@@ -705,7 +705,6 @@ const Plugin = {
    */
   install: Vue => {
     Vue.use(__WEBPACK_IMPORTED_MODULE_1_vue_affix___default.a);
-    console.log('installed affix');
     Vue.component('Layout', __WEBPACK_IMPORTED_MODULE_0__Layout__["a" /* default */]);
   }
 };
