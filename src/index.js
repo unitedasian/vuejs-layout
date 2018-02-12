@@ -1,7 +1,7 @@
 import Layout from './Layout'
 
 export default {
-  install(Vue) {
+  install (Vue) {
     Vue.component('layout', Layout);
   }
 }
