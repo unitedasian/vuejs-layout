@@ -1,9 +1,16 @@
 import Layout from './Layout'
+import Affix from 'vue-affix'
 
-export default {
-  install (Vue) {
-    Vue.component('Layout', Layout);
+const Plugin = {
+  /**
+   * Install user plugin
+   *
+   * @param {Vue} Vue
+   */
+  install: (Vue) => {
+    Vue.use(Affix)
+    Vue.component('Layout', Layout)
   }
 }
 
-export { Layout }
+export default Plugin

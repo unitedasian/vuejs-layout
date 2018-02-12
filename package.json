@@ -11,8 +11,7 @@
     "build": "rm -rf ./dist/* && NODE_ENV=production webpack --colors --hide-modules"
   },
   "dependencies": {
-    "vue": "^2.5.13",
-    "vuex": "^3.0.1"
+    "vue-affix": "^0.2.4"
   },
   "peerDependencies": {
     "bootstrap": "^4.0.0-beta.2",
