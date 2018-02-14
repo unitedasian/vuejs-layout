@@ -2,7 +2,7 @@
   "name": "uam-vuejs-layout",
   "version": "0.1.9",
   "description": "Vuejs layout",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "repository": "git@gitlab.united-asian.com:vuejs/user.git",
   "author": "Olivier Pichon <op@united-asian.com>",
   "license": "proprietary",
