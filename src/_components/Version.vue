@@ -1,16 +1,12 @@
 <template>
   <div class="version">
-    {{ version }}
+    {{ app_version }}
   </div>
 </template>
 
 <script>
 export default {
-  computed: {
-    version () {
-      return process.env.APP_VERSION
-    }
-  }
+  props: ['app_version']
 }
 </script>
 

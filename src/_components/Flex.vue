@@ -31,7 +31,7 @@
 
     <footer>
       <slot name="_footer">
-        <Version />
+        <Version :app_version="app_version" />
       </slot>
     </footer>
   </div>
@@ -53,7 +53,7 @@ export default {
     }
   },
 
-  props: ['enableSidebar']
+  props: ['app_version', 'enableSidebar']
 }
 </script>
 
