@@ -220,9 +220,10 @@ module.exports = function normalizeComponent (
     Flex: __WEBPACK_IMPORTED_MODULE_1__components_Flex__["a" /* default */]
   },
 
-  created() {
+  created: function created() {
     this.$store.registerModule('$_layout', __WEBPACK_IMPORTED_MODULE_0__store__["a" /* default */]);
   },
+
 
   props: ['app_version', 'enableSidebar', 'layout', 'sidebar']
 });
@@ -284,7 +285,7 @@ module.exports = function normalizeComponent (
   },
 
   computed: {
-    sidebar() {
+    sidebar: function sidebar() {
       return this.$store.getters['$_layout/sidebar'];
     }
   },
@@ -339,17 +340,16 @@ module.exports = function normalizeComponent (
 
 /* harmony default export */ __webpack_exports__["a"] = ({
   computed: {
-    sidebar() {
+    sidebar: function sidebar() {
       return this.$store.getters['$_layout/sidebar'];
     },
-
-    icon() {
+    icon: function icon() {
       return this.sidebar === 'collapsed' ? 'fa fa-angle-double-right' : 'fa fa-angle-double-left';
     }
   },
 
   methods: {
-    toggle() {
+    toggle: function toggle() {
       this.$store.dispatch('$_layout/toggleSidebar');
     }
   }
@@ -397,13 +397,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-const Plugin = {
+var Plugin = {
   /**
    * Install user plugin
    *
    * @param {Vue} Vue
    */
-  install: Vue => {
+  install: function install(Vue) {
     Vue.use(__WEBPACK_IMPORTED_MODULE_1_vue_affix___default.a);
     Vue.component('Layout', __WEBPACK_IMPORTED_MODULE_0__Layout__["a" /* default */]);
   }
@@ -457,13 +457,13 @@ var Component = normalizeComponent(
 
 
 
-const state = {
+var state = {
   sidebar: null
 };
 
 /* harmony default export */ __webpack_exports__["a"] = ({
   namespaced: true,
-  state,
+  state: state,
   actions: __WEBPACK_IMPORTED_MODULE_0__actions__["a" /* default */],
   getters: __WEBPACK_IMPORTED_MODULE_1__getters__["a" /* default */],
   mutations: __WEBPACK_IMPORTED_MODULE_2__mutations__["a" /* default */]
@@ -474,12 +474,12 @@ const state = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-const toggleSidebar = context => {
+var toggleSidebar = function toggleSidebar(context) {
   context.commit('TOGGLE_SIDEBAR');
 };
 
 /* harmony default export */ __webpack_exports__["a"] = ({
-  toggleSidebar
+  toggleSidebar: toggleSidebar
 });
 
 /***/ }),
@@ -487,8 +487,8 @@ const toggleSidebar = context => {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-const sidebar = state => {
-  let sidebar = state.sidebar;
+var sidebar = function sidebar(state) {
+  var sidebar = state.sidebar;
 
   if (!sidebar) {
     sidebar = localStorage.getItem('uam.layout.sidebar');
@@ -502,7 +502,7 @@ const sidebar = state => {
 };
 
 /* harmony default export */ __webpack_exports__["a"] = ({
-  sidebar
+  sidebar: sidebar
 });
 
 /***/ }),
@@ -510,14 +510,14 @@ const sidebar = state => {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-const TOGGLE_SIDEBAR = state => {
+var TOGGLE_SIDEBAR = function TOGGLE_SIDEBAR(state) {
   state.sidebar = state.sidebar === 'collapsed' ? 'expanded' : 'collapsed';
 
   localStorage.setItem('uam.layout.sidebar', state.sidebar);
 };
 
 /* harmony default export */ __webpack_exports__["a"] = ({
-  TOGGLE_SIDEBAR
+  TOGGLE_SIDEBAR: TOGGLE_SIDEBAR
 });
 
 /***/ }),
