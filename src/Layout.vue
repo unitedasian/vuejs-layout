@@ -1,7 +1,8 @@
 <template>
   <component
+    :app_version="app_version"
     :enableSidebar="enableSidebar"
-    :is="layout" >
+    :is="layout">
     <template slot="_logo">
       <slot name="logo" />
     </template>
@@ -32,6 +33,6 @@ export default {
     this.$store.registerModule('$_layout', store)
   },
 
-  props: ['enableSidebar', 'layout', 'sidebar']
+  props: ['app_version', 'enableSidebar', 'layout', 'sidebar']
 }
 </script>

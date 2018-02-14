@@ -2,13 +2,14 @@
   "name": "uam-vuejs-layout",
   "version": "0.1.9",
   "description": "Vuejs layout",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "repository": "git@gitlab.united-asian.com:vuejs/user.git",
   "author": "Olivier Pichon <op@united-asian.com>",
   "license": "proprietary",
   "private": true,
   "scripts": {
-    "build": "rm -rf ./dist/* && NODE_ENV=production webpack --colors --hide-modules"
+    "build": "rm -rf ./dist/* && NODE_ENV=production webpack --colors --hide-modules",
+    "dev": "rm -rf ./dist/* && webpack --colors --hide-modules"
   },
   "dependencies": {
     "vue-affix": "^0.2.4"
@@ -29,8 +30,10 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
     "node-sass": "^4.5.3",
     "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.1",
     "vue-loader": "^13.6.1",
     "vue-style-loader": "^3.0.3",
     "vue-template-compiler": "^2.5.13",

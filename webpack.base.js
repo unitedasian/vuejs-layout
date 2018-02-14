@@ -1,23 +1,51 @@
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+const extractSass = new ExtractTextPlugin({
+  filename: "layout.css",
+  disable: process.env.NODE_ENV === "development"
+})
+
 module.exports = {
   module: {
     rules: [
       {
-        test: /\.js/,
-        loaders: ['babel-loader'],
         exclude: /node_modules/,
+        loaders: ['babel-loader'],
+        test: /\.js/
       },
       {
-        test: /\.vue$/,
-        loaders: ['vue-loader'],
         exclude: /node_modules/,
+        loader: 'vue-loader',
+        options: {
+          extractCSS: true
+        },
+        test: /\.vue$/
       },
-    ],
+      {
+        exclude: /node_modules/,
+        test: /\.scss$/,
+        use: ExtractTextPlugin.extract({
+          fallback: "style-loader",
+          use: [
+            {
+              loader: "css-loader"
+            },
+            {
+              loader: "sass-loader"
+            }
+          ]
+        })
+      }
+    ]
   },
-
+  plugins: [
+    extractSass
+  ],
   resolve: {
     extensions: ['.js', '.vue'],
     alias: {
-      'vue$': 'vue/dist/vue.esm.js'
+      'vue$': 'vue/dist/vue.esm.js',
+      '@': './src'
     }
-  },
+  }
 }
