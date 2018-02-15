@@ -19,8 +19,8 @@
 </template>
 
 <script>
-import store from './_store'
-import Flex from './_components/Flex'
+import store from './store'
+import Flex from './components/Flex'
 
 export default {
   name: 'Layout',

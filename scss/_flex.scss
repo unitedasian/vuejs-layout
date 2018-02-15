@@ -1,0 +1,20 @@
+.flex {
+  > .body {
+    > aside {
+      border-right: 1px solid $border-color;
+    }
+
+    > main {
+      > section {
+        .content {
+          border: 1px solid $content-border-color;
+        }
+      }
+    }
+  }
+
+  .footer {
+    background-color: $footer-bg-color;
+    border-top: 1px solid $footer-border-color;
+  }
+}

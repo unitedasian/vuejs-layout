@@ -58,8 +58,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../_scss/_vars";
-
 .flex {
   align-items: stretch;
   display: flex;
@@ -77,7 +75,6 @@ export default {
 
     > aside {
       align-items: center;
-      border-right: 1px solid $border-color;
       display: none;
       flex-direction: column;
       justify-content: space-between;
@@ -112,7 +109,6 @@ export default {
 
         .content {
           background-color: #fff;
-          border: 1px solid $content-border-color;
           flex: 1;
           padding: 1rem 1.5rem;
 
@@ -125,8 +121,6 @@ export default {
   }
 
   footer {
-    background-color: $bg-color;
-    border-top: 1px solid $border-color;
     padding: 0.75rem 2.5rem;
   }
 

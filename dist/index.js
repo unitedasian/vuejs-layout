@@ -392,7 +392,7 @@ module.exports = __webpack_require__(8);
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Layout__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_affix__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_affix__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_affix___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_affix__);
 
 
@@ -418,7 +418,7 @@ var Plugin = {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Layout_vue__ = __webpack_require__(1);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_d0275ba0_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Layout_vue__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_d0275ba0_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Layout_vue__ = __webpack_require__(25);
 var normalizeComponent = __webpack_require__(0)
 /* script */
 
@@ -527,7 +527,7 @@ var TOGGLE_SIDEBAR = function TOGGLE_SIDEBAR(state) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Flex_vue__ = __webpack_require__(2);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_64bf02f8_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Flex_vue__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_64bf02f8_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Flex_vue__ = __webpack_require__(24);
 function injectStyle (ssrContext) {
   __webpack_require__(15)
 }
@@ -561,7 +561,7 @@ var Component = normalizeComponent(
 /* 15 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleBuildError: Module build failed: \n@import \"../_scss/_vars\";\n^\n      File to import not found or unreadable: ../_scss/_vars.\nParent style sheet: stdin\n      in /Users/olivier/projects/vuejs/layout/src/_components/Flex.vue (line 61, column 1)\n    at runLoaders (/Users/olivier/projects/vuejs/layout/node_modules/webpack/lib/NormalModule.js:195:19)\n    at /Users/olivier/projects/vuejs/layout/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /Users/olivier/projects/vuejs/layout/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/Users/olivier/projects/vuejs/layout/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Object.asyncSassJobQueue.push [as callback] (/Users/olivier/projects/vuejs/layout/node_modules/sass-loader/lib/loader.js:55:13)\n    at Object.<anonymous> (/Users/olivier/projects/vuejs/layout/node_modules/async/dist/async.js:2257:31)\n    at Object.callback (/Users/olivier/projects/vuejs/layout/node_modules/async/dist/async.js:958:16)\n    at options.error (/Users/olivier/projects/vuejs/layout/node_modules/node-sass/lib/index.js:294:32)");
 
 /***/ }),
 /* 16 */
@@ -604,7 +604,7 @@ var Component = normalizeComponent(
 /* 17 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleBuildError: Module build failed: \n@import \"../_scss/_vars\";\n^\n      File to import not found or unreadable: ../_scss/_vars.\nParent style sheet: stdin\n      in /Users/olivier/projects/vuejs/layout/src/_components/Topnav.vue (line 30, column 1)\n    at runLoaders (/Users/olivier/projects/vuejs/layout/node_modules/webpack/lib/NormalModule.js:195:19)\n    at /Users/olivier/projects/vuejs/layout/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /Users/olivier/projects/vuejs/layout/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/Users/olivier/projects/vuejs/layout/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Object.asyncSassJobQueue.push [as callback] (/Users/olivier/projects/vuejs/layout/node_modules/sass-loader/lib/loader.js:55:13)\n    at Object.<anonymous> (/Users/olivier/projects/vuejs/layout/node_modules/async/dist/async.js:2257:31)\n    at Object.callback (/Users/olivier/projects/vuejs/layout/node_modules/async/dist/async.js:958:16)\n    at options.error (/Users/olivier/projects/vuejs/layout/node_modules/node-sass/lib/index.js:294:32)");
 
 /***/ }),
 /* 18 */
@@ -613,7 +613,7 @@ var Component = normalizeComponent(
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_SidebarToggle_vue__ = __webpack_require__(4);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4952b0cf_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_SidebarToggle_vue__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_c5d79eea_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_SidebarToggle_vue__ = __webpack_require__(20);
 function injectStyle (ssrContext) {
   __webpack_require__(19)
 }
@@ -628,12 +628,12 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-4952b0cf"
+var __vue_scopeId__ = "data-v-c5d79eea"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_SidebarToggle_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4952b0cf_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_SidebarToggle_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_c5d79eea_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_SidebarToggle_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -647,7 +647,7 @@ var Component = normalizeComponent(
 /* 19 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleBuildError: Module build failed: \n@import \"../_scss/_vars\";\n^\n      File to import not found or unreadable: ../_scss/_vars.\nParent style sheet: stdin\n      in /Users/olivier/projects/vuejs/layout/src/_components/SidebarToggle.vue (line 30, column 1)\n    at runLoaders (/Users/olivier/projects/vuejs/layout/node_modules/webpack/lib/NormalModule.js:195:19)\n    at /Users/olivier/projects/vuejs/layout/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /Users/olivier/projects/vuejs/layout/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/Users/olivier/projects/vuejs/layout/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Object.asyncSassJobQueue.push [as callback] (/Users/olivier/projects/vuejs/layout/node_modules/sass-loader/lib/loader.js:55:13)\n    at Object.<anonymous> (/Users/olivier/projects/vuejs/layout/node_modules/async/dist/async.js:2257:31)\n    at Object.callback (/Users/olivier/projects/vuejs/layout/node_modules/async/dist/async.js:958:16)\n    at options.error (/Users/olivier/projects/vuejs/layout/node_modules/node-sass/lib/index.js:294:32)");
 
 /***/ }),
 /* 20 */
@@ -676,10 +676,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Version_vue__ = __webpack_require__(5);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_64cbeffb_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Version_vue__ = __webpack_require__(24);
-function injectStyle (ssrContext) {
-  __webpack_require__(23)
-}
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7b5ba6ec_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Version_vue__ = __webpack_require__(23);
 var normalizeComponent = __webpack_require__(0)
 /* script */
 
@@ -689,14 +686,14 @@ var normalizeComponent = __webpack_require__(0)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
-var __vue_styles__ = injectStyle
+var __vue_styles__ = null
 /* scopeId */
-var __vue_scopeId__ = "data-v-64cbeffb"
+var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Version_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_64cbeffb_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Version_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7b5ba6ec_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Version_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -708,12 +705,6 @@ var Component = normalizeComponent(
 
 /***/ }),
 /* 23 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 24 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -723,7 +714,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 25 */
+/* 24 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -733,7 +724,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 26 */
+/* 25 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -743,7 +734,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 27 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 (function webpackUniversalModuleDefinition(root, factory) {
