@@ -27,6 +27,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../_scss/_vars";
+
 .toggle {
   background-color: #fff;
   border: none;
