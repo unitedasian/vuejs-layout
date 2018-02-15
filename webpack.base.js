@@ -16,9 +16,6 @@ module.exports = {
       {
         exclude: /node_modules/,
         loader: 'vue-loader',
-        options: {
-          extractCSS: true
-        },
         test: /\.vue$/
       },
       {

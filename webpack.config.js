@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = merge(require('./webpack.base'), {
   context: __dirname,
 
-  entry: ['./assets/scss/main.scss', './src/index.js'],
+  entry: ['./scss/main.scss', './src/index.js'],
 
   output: {
     path: path.resolve(__dirname, 'dist'),
