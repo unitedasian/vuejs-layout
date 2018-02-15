@@ -1,20 +1,126 @@
 .flex {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding-top: 68px;
+
   > .body {
+    align-items: stretch;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+
     > aside {
+      align-items: center;
       border-right: 1px solid $border-color;
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 2.5rem;
+      position: relative;
+      width: $sidebar-width;
+
+      .vue-affix {
+        width: $sidebar-width;
+
+        &.affix {
+          top: 111px!important;
+        }
+
+        .sidebar {
+          flex: 1;
+        }
+      }
     }
 
     > main {
+      background-color: $bg-content-color;
+      flex: 1;
+      padding: 1.25rem $padding-h;
+
       > section {
+        align-content: stretch;
+        align-items: stretch;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
         .content {
+          background-color: #fff;
           border: 1px solid $content-border-color;
+          flex: 1;
+          padding: 1rem 1.5rem;
+
+          .tabs {
+            margin: 0 -1.5rem;
+          }
         }
       }
     }
   }
 
-  .footer {
+  > footer {
     background-color: $footer-bg-color;
     border-top: 1px solid $footer-border-color;
+    padding: 0.75rem 2.5rem;
+  }
+
+  > header {
+    background-color: $header-bg-color;
+    border-bottom: 1px solid $header-border-color;
+    left: 0;
+    padding: 0.75rem 2.5rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1030;
+  }
+}
+
+@media (min-width: 768px) {
+  .flex {
+    padding-top: 4rem;
+
+    footer {
+      padding: 0.75rem $padding-h;
+    }
+
+    header {
+      height: 4rem;
+      padding: 0.75rem $padding-h;
+    }
+
+    > .body {
+      > main {
+        padding: 1.25rem $padding-h;
+      }
+    }
+
+    &.collapsed {
+      > .body {
+        > aside {
+          display: none;
+        }
+
+        > main {
+          padding-left: $padding-h;
+        }
+      }
+    }
+
+    &.expanded {
+      > .body {
+        > aside {
+          display: flex;
+        }
+
+        > main {
+          padding-left: 1.25rem;
+        }
+      }
+    }
   }
 }
