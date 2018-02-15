@@ -1,5 +1,5 @@
 <template lang="html">
-  <nav class="topnav">
+  <header class="topnav">
     <nav class="nav-left">
       <slot name="__logo">LOGO</slot>
       <SidebarToggle v-if="enableSidebarToggle" />
@@ -11,7 +11,7 @@
       <slot name="__nav-right">
       </slot>
     </nav>
-  </nav>
+  </header>
 </template>
 
 <script>

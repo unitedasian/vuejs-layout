@@ -2,7 +2,23 @@ $bg-color: #ffffff;
 $bg-content-color: #f7f7fa;
 $border-color: #c1c4d0;
 
-$footer-bg_color: #ffffff;
-$footer-border-color: #c1c4d0;
+$content-bg-color: $bg-color;
+$content-border-color: $border-color;
+
+$footer-bg-color: $bg-color;
+$footer-border-color: $border-color;
+
+$header-bg-color: $bg-color;
+$header-border-color: $border-color;
+
+$logo-width: 10rem;
+
+$padding-h: 2rem;
+$padding-v: 0.5rem;
+
+$sidebar-width: 13rem;
+
+$toggle-bg-color: $bg-color;
+$toggle-width: 2rem;
 
 $version_font_size: 0.65rem;

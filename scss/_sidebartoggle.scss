@@ -1,21 +1,16 @@
 .toggle {
-  background-color: #fff;
+  background-color: $toggle-bg-color;
   border: none;
-  height: 100%;
-  left: 0;
+  height: 98%;
   padding: 0 0.5rem;
   position: absolute;
   top: 350px;
-
-  img {
-    height: 100%;
-    object-fit: contain;
-  }
 }
 
 @media (min-width: 768px) {
   .toggle {
-    left: 181px;
+    right: -($toggle-width / 2);
     top: 0;
+    width: $toggle-width;
   }
 }
