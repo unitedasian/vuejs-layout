@@ -1,6 +1,6 @@
 {
   "name": "uam-vuejs-layout",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Vuejs layout",
   "main": "dist/index.js",
   "repository": "git@gitlab.united-asian.com:vuejs/user.git",
