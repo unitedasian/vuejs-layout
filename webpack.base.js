@@ -10,7 +10,7 @@ const uglifyPlugin = new webpack.optimize.UglifyJsPlugin({
   sourceMap : true
 })
 
-let plugins = [
+const plugins = [
   extractSass
 ]
 
