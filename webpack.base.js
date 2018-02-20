@@ -1,9 +1,22 @@
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const ExtractTextPlugin = require("extract-text-webpack-plugin")
+const webpack = require('webpack')
 
 const extractSass = new ExtractTextPlugin({
-  filename: "layout.css",
-  disable: process.env.NODE_ENV === "development"
+  filename: "layout.css"
 })
+
+const uglifyPlugin = new webpack.optimize.UglifyJsPlugin({
+  parallel: true,
+  sourceMap : true
+})
+
+let plugins = [
+  extractSass
+]
+
+if (process.env.NODE_ENV === "production") {
+  plugins.push(uglifyPlugin)
+}
 
 module.exports = {
   module: {
@@ -35,9 +48,7 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    extractSass
-  ],
+  plugins,
   resolve: {
     extensions: ['.js', '.vue'],
     alias: {
