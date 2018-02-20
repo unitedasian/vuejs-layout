@@ -2,16 +2,14 @@
   <div
     :class="enableSidebar ? sidebar : ''"
     class="flex">
-    <header>
-      <Topnav :enableSidebarToggle="enableSidebar">
-        <template slot="__logo">
-          <slot name="_logo" />
-        </template>
-        <template slot="__nav-right">
-          <slot name="_nav-right" />
-        </template>
-      </Topnav>
-    </header>
+    <Topnav :enableSidebarToggle="enableSidebar">
+      <template slot="__logo">
+        <slot name="_logo" />
+      </template>
+      <template slot="__nav-right">
+        <slot name="_nav-right" />
+      </template>
+    </Topnav>
 
     <section class="body">
       <aside v-if="enableSidebar">

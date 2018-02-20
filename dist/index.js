@@ -272,8 +272,6 @@ module.exports = function normalizeComponent (
 //
 //
 //
-//
-//
 
 
 
@@ -527,7 +525,7 @@ var TOGGLE_SIDEBAR = function TOGGLE_SIDEBAR(state) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Flex_vue__ = __webpack_require__(2);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_bef8a6b0_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Flex_vue__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_61486f8e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Flex_vue__ = __webpack_require__(21);
 var normalizeComponent = __webpack_require__(0)
 /* script */
 
@@ -544,7 +542,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Flex_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_bef8a6b0_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Flex_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_61486f8e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Flex_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -691,7 +689,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"flex",class:_vm.enableSidebar ? _vm.sidebar : ''},[_c('header',[_c('Topnav',{attrs:{"enableSidebarToggle":_vm.enableSidebar}},[_c('template',{slot:"__logo"},[_vm._t("_logo")],2),_vm._v(" "),_c('template',{slot:"__nav-right"},[_vm._t("_nav-right")],2)],2)],1),_vm._v(" "),_c('section',{staticClass:"body"},[(_vm.enableSidebar)?_c('aside',[_c('affix',{attrs:{"offset":{ top: 76, bottom: -100 },"relative-element-selector":"#main"}},[_vm._t("_sidebar",[_c('pre',[_vm._v("Sidebar goes here")])])],2)],1):_vm._e(),_vm._v(" "),_c('main',{attrs:{"id":"main"}},[_c('router-view')],1)]),_vm._v(" "),_c('footer',[_vm._t("_footer",[_c('Version',{attrs:{"app_version":_vm.app_version}})])],2)])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"flex",class:_vm.enableSidebar ? _vm.sidebar : ''},[_c('Topnav',{attrs:{"enableSidebarToggle":_vm.enableSidebar}},[_c('template',{slot:"__logo"},[_vm._t("_logo")],2),_vm._v(" "),_c('template',{slot:"__nav-right"},[_vm._t("_nav-right")],2)],2),_vm._v(" "),_c('section',{staticClass:"body"},[(_vm.enableSidebar)?_c('aside',[_c('affix',{attrs:{"offset":{ top: 76, bottom: -100 },"relative-element-selector":"#main"}},[_vm._t("_sidebar",[_c('pre',[_vm._v("Sidebar goes here")])])],2)],1):_vm._e(),_vm._v(" "),_c('main',{attrs:{"id":"main"}},[_c('router-view')],1)]),_vm._v(" "),_c('footer',[_vm._t("_footer",[_c('Version',{attrs:{"app_version":_vm.app_version}})])],2)],1)}
 var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
