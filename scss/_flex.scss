@@ -39,7 +39,7 @@
     > main {
       background-color: $bg-content-color;
       flex: 1;
-      padding: 1.25rem $padding-h;
+      padding: 1.25rem $padding-h-xs;
 
       > section {
         align-content: stretch;
@@ -85,7 +85,7 @@
     padding-top: 4rem;
 
     footer {
-      padding: 0.75rem $padding-h;
+      padding: 0.75rem $padding-h-sm;
     }
 
     header {
@@ -94,7 +94,7 @@
 
     > .body {
       > main {
-        padding: 1.25rem $padding-h;
+        padding: 1.25rem $padding-h-sm;
       }
     }
 
@@ -105,7 +105,7 @@
         }
 
         > main {
-          padding-left: $padding-h;
+          padding-left: $padding-h-sm;
         }
       }
     }
