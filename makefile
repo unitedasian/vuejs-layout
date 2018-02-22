@@ -1,5 +1,14 @@
 build:
-	npm run build
+	yarn run build
+
+dev:
+	yarn run dev
+
+fix:
+	yarn run fix
 
 install:
-	npm install
+	yarn install
+
+lint:
+	yarn run lint
