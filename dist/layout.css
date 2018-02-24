@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-  padding-top: 68px; }
+  padding-top: 3rem; }
   .flex > .body {
     align-items: stretch;
     display: flex;
@@ -29,7 +29,7 @@
     .flex > .body > main {
       background-color: #f7f7fa;
       flex: 1;
-      padding: 1.25rem 0.5rem; }
+      padding: 0.1rem 0.5rem; }
       .flex > .body > main > section {
         align-content: stretch;
         align-items: stretch;
@@ -50,7 +50,9 @@
   .flex > header {
     background-color: #ffffff;
     border-bottom: 1px solid #c1c4d0;
+    height: 3rem;
     left: 0;
+    min-height: 3rem;
     padding: 0;
     position: fixed;
     right: 0;
@@ -63,9 +65,10 @@
     .flex footer {
       padding: 0.75rem 2rem; }
     .flex header {
-      height: 4rem; }
+      height: 4rem;
+      min-height: 4rem; }
     .flex > .body > main {
-      padding: 1.25rem 2rem; }
+      padding: 0.5rem 2rem; }
     .flex.collapsed > .body > aside {
       display: none; }
     .flex.collapsed > .body > main {

@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-  padding-top: 68px;
+  padding-top: $header-height-xs;
 
   > .body {
     align-items: stretch;
@@ -39,7 +39,7 @@
     > main {
       background-color: $bg-content-color;
       flex: 1;
-      padding: 1.25rem $padding-h-xs;
+      padding: $padding-v-xs $padding-h-xs;
 
       > section {
         align-content: stretch;
@@ -71,7 +71,9 @@
   > header {
     background-color: $header-bg-color;
     border-bottom: 1px solid $header-border-color;
+    height: $header-height-xs;
     left: 0;
+    min-height: $header-height-xs;
     padding: 0;
     position: fixed;
     right: 0;
@@ -82,19 +84,20 @@
 
 @media (min-width: 768px) {
   .flex {
-    padding-top: 4rem;
+    padding-top: $header-height-sm;
 
     footer {
       padding: 0.75rem $padding-h-sm;
     }
 
     header {
-      height: 4rem;
+      height: $header-height-sm;
+      min-height: $header-height-sm;
     }
 
     > .body {
       > main {
-        padding: 1.25rem $padding-h-sm;
+        padding: $padding-v-sm $padding-h-sm;
       }
     }
 
