@@ -3,12 +3,12 @@
   border: none;
   height: 98%;
   padding: 0 0.5rem;
-  position: absolute;
-  top: 350px;
 }
 
 @media (min-width: 768px) {
   .toggle {
+    left: 0;
+    position: absolute;
     right: -($toggle-width / 2);
     top: 0;
     width: $toggle-width;

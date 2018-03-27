@@ -58,6 +58,14 @@
     right: 0;
     top: 0;
     z-index: 1030; }
+  .flex.collapsed > .body > aside {
+    display: none; }
+  .flex.collapsed > .body > main {
+    padding-left: 2rem; }
+  .flex.expanded > .body > aside {
+    display: flex; }
+  .flex.expanded > .body > main {
+    padding-left: 1.25rem; }
 
 @media (min-width: 768px) {
   .flex {
@@ -67,6 +75,8 @@
     .flex header {
       height: 4rem;
       min-height: 4rem; }
+    .flex > .body > aside {
+      padding-left: 2rem; }
     .flex > .body > main {
       padding: 0.5rem 2rem; }
     .flex.collapsed > .body > aside {
@@ -82,41 +92,40 @@
   background-color: #ffffff;
   border: none;
   height: 98%;
-  padding: 0 0.5rem;
-  position: absolute;
-  top: 350px; }
+  padding: 0 0.5rem; }
 
 @media (min-width: 768px) {
   .toggle {
+    left: 0;
+    position: absolute;
     right: -1rem;
     top: 0;
     width: 2rem; } }
 
-.topnav {
+.nav-top {
   align-items: flex-start;
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
-  .topnav > nav {
-    padding: 0.1rem 0.5rem; }
-    .topnav > nav.nav-center {
-      align-items: flex-start;
-      flex: 1;
-      display: flex;
-      flex-direction: row;
-      justify-content: center; }
-    .topnav > nav.nav-left {
-      position: absolute;
-      width: 13rem; }
-    .topnav > nav.nav-right {
-      align-items: flex-start;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between; }
+  justify-content: space-between;
+  padding: 0.1rem 0.5rem; }
+  .nav-top > nav.nav-center {
+    align-items: flex-start;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .nav-top > nav.nav-right {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
 
 @media (min-width: 768px) {
-  .topnav > nav {
-    padding: 0.5rem 2rem; } }
+  .nav-top {
+    padding: 0.5rem 2rem; }
+    .nav-top > nav.nav-brand {
+      position: absolute;
+      width: 13rem; } }
 
 .version {
   font-size: 0.65rem; }

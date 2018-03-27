@@ -2,15 +2,16 @@
   <div
     :class="enableSidebar ? sidebar : ''"
     class="flex">
-    <Topnav :enableSidebarToggle="enableSidebar">
-      <template slot="__logo">
-        <slot name="_logo" />
-      </template>
-      <template slot="__nav-right">
-        <slot name="_nav-right" />
-      </template>
-    </Topnav>
-
+    <header>
+      <Topnav :enableSidebarToggle="enableSidebarToggle">
+        <template slot="__logo">
+          <slot name="_logo" />
+        </template>
+        <template slot="__nav-right">
+          <slot name="_nav-right" />
+        </template>
+      </Topnav>
+    </header>
     <section class="body">
       <aside v-if="enableSidebar">
         <affix
@@ -51,6 +52,6 @@ export default {
     }
   },
 
-  props: ['app_version', 'enableSidebar']
+  props: ['app_version', 'enableSidebar', 'enableSidebarToggle']
 }
 </script>

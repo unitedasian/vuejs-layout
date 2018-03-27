@@ -80,6 +80,30 @@
     top: 0;
     z-index: 1030;
   }
+
+  &.collapsed {
+    > .body {
+      > aside {
+        display: none;
+      }
+
+      > main {
+        padding-left: $padding-h-sm;
+      }
+    }
+  }
+
+  &.expanded {
+    > .body {
+      > aside {
+        display: flex;
+      }
+
+      > main {
+        padding-left: 1.25rem;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -96,6 +120,10 @@
     }
 
     > .body {
+      > aside {
+        padding-left: $padding-h-sm;
+      }
+
       > main {
         padding: $padding-v-sm $padding-h-sm;
       }
