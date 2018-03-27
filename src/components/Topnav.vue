@@ -4,7 +4,7 @@
     <nav class="nav-brand">
       <slot name="__logo">LOGO</slot>
     </nav>
-    <div class="navbar-collapse collapse" id="__nav"
+    <div class="navbar-collapse collapse" :class="collapsed ? '' : 'show'">
       <nav class="nav-center">
         <slot name="nav-center" />
       </nav>
@@ -14,6 +14,7 @@
       </nav>
     </div>
     <button
+      @click="toggleNav"
       aria-controls="navbarSupportedContent"
       aria-expanded="false"
       aria-label="Toggle navigation"
@@ -21,22 +22,32 @@
       data-toggle="collapse"
       data-target="#__nav"
       type="button">
-      <icon name="ellipsis" />
+      <i class="fa fa-ellipsis-v"></i>
     </button>
   </nav>
 </template>
 
 <script>
-import Icon from 'vue-awesome/components/Icon'
 import SidebarToggle from './SidebarToggle'
-import 'vue-awesome/icons/ellipsis'
 
 export default {
   components: {
-    Icon,
     SidebarToggle
+  },
+
+  data () {
+    return {
+      collapsed: true
+    }
+  },
+
+  methods: {
+    toggleNav () {
+      this.collapsed = !this.collapsed
+    }
   },
 
   props: ['enableSidebarToggle']
 }
 </script>
+

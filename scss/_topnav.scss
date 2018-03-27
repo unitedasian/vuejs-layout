@@ -5,24 +5,49 @@
   justify-content: space-between;
   padding: $padding-v-xs $padding-h-xs;
 
-  > nav {
-    &.nav-brand {
+  .navbar-collapse {
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid $border-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    right: $padding-h-xs;
+    top: $header-height-xs;
+
+    &.collapse {
+      display: none;
     }
 
-    &.nav-center {
-      align-items: flex-start;
-      flex: 1;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
+    &.show {
+      display: block;
     }
 
-    &.nav-right {
-      align-items: flex-start;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+    > nav {
+      &.nav-brand {
+      }
+
+      &.nav-center {
+        align-items: flex-start;
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      &.nav-right {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
     }
+
+    .navbar-toggler {
+      display: block;
+    }
+
   }
 }
 
@@ -32,9 +57,21 @@
 
     > nav {
       &.nav-brand {
-        position: absolute;
         width: $sidebar-width;
       }
+    }
+
+    .navbar-collapse {
+      background-color: transparent;
+      border: none;
+      display: flex!important;
+      flex: 1;
+      flex-direction: row;
+      position: static;
+    }
+
+    .navbar-toggler {
+      display: none;
     }
   }
 }

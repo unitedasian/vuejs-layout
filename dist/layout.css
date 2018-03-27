@@ -108,24 +108,48 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 0.1rem 0.5rem; }
-  .nav-top > nav.nav-center {
-    align-items: flex-start;
-    flex: 1;
+  .nav-top .navbar-collapse {
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #c1c4d0;
     display: flex;
-    flex-direction: row;
-    justify-content: center; }
-  .nav-top > nav.nav-right {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    right: 0.5rem;
+    top: 3rem; }
+    .nav-top .navbar-collapse.collapse {
+      display: none; }
+    .nav-top .navbar-collapse.show {
+      display: block; }
+    .nav-top .navbar-collapse > nav.nav-center {
+      align-items: flex-start;
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      justify-content: center; }
+    .nav-top .navbar-collapse > nav.nav-right {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+    .nav-top .navbar-collapse .navbar-toggler {
+      display: block; }
 
 @media (min-width: 768px) {
   .nav-top {
     padding: 0.5rem 2rem; }
     .nav-top > nav.nav-brand {
-      position: absolute;
-      width: 13rem; } }
+      width: 13rem; }
+    .nav-top .navbar-collapse {
+      background-color: transparent;
+      border: none;
+      display: flex !important;
+      flex: 1;
+      flex-direction: row;
+      position: static; }
+    .nav-top .navbar-toggler {
+      display: none; } }
 
 .version {
   font-size: 0.65rem; }
