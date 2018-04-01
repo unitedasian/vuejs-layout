@@ -8,6 +8,7 @@
 
   > .body {
     align-items: stretch;
+    background-color: $bg-content-color;
     display: flex;
     flex: 1;
     flex-direction: row;
@@ -37,7 +38,6 @@
     }
 
     > main {
-      background-color: $bg-content-color;
       flex: 1;
       padding: $padding-v-xs $padding-h-xs;
 

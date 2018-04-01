@@ -3,7 +3,9 @@
     :class="enableSidebar ? sidebar : ''"
     class="flex">
     <header>
-      <Topnav :enableSidebarToggle="enableSidebarToggle">
+      <Topnav
+        :enableSidebarToggle="enableSidebarToggle"
+        :flatten="flatten">
         <template slot="__logo">
           <slot name="_logo" />
         </template>
@@ -30,7 +32,7 @@
 
     <footer>
       <slot name="_footer">
-        <Version :app_version="app_version" />
+        <Version :appVersion="appVersion" />
       </slot>
     </footer>
   </div>
@@ -52,6 +54,18 @@ export default {
     }
   },
 
-  props: ['app_version', 'enableSidebar', 'enableSidebarToggle']
+  props: {
+    appVersion: {
+    },
+    enableSidebar: {
+      default: true
+    },
+    enableSidebarToggle: {
+      default: true
+    },
+    flatten: {
+      default: true
+    }
+  }
 }
 </script>

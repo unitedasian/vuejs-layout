@@ -1,5 +1,5 @@
 .nav-top {
-  align-items: flex-start;
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -42,6 +42,10 @@
         flex-direction: row;
         justify-content: space-between;
       }
+
+      .nav {
+        flex-direction: column;
+      }
     }
 
     .navbar-toggler {
@@ -68,10 +72,53 @@
       flex: 1;
       flex-direction: row;
       position: static;
+
+      > nav {
+        .nav {
+          flex-direction: row;
+
+          .dropdown-menu {
+            position: absolute;
+            float: left;
+          }
+        }
+      }
     }
 
     .navbar-toggler {
       display: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-top {
+    .navbar-collapse {
+      > nav {
+        .nav {
+          .dropdown {
+            .dropdown-menu {
+              border: none!important;
+              display: block!important;
+              position: static!important;
+              float: none!important;
+              transform: none!important;
+            }
+          }
+        }
+      }
+
+      &.flatten {
+        > nav {
+          .nav {
+            .dropdown {
+              .dropdown-toggle {
+                display: none;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

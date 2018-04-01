@@ -1,11 +1,11 @@
 <template>
   <div class="version">
-    {{ app_version }}
+    {{ appVersion }}
   </div>
 </template>
 
 <script>
 export default {
-  props: ['app_version']
+  props: ['appVersion']
 }
 </script>

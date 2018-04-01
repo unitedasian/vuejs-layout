@@ -7,6 +7,7 @@
   padding-top: 3rem; }
   .flex > .body {
     align-items: stretch;
+    background-color: #f7f7fa;
     display: flex;
     flex: 1;
     flex-direction: row;
@@ -27,7 +28,6 @@
         .flex > .body > aside .vue-affix .sidebar {
           flex: 1; }
     .flex > .body > main {
-      background-color: #f7f7fa;
       flex: 1;
       padding: 0.1rem 0.5rem; }
       .flex > .body > main > section {
@@ -103,7 +103,7 @@
     width: 2rem; } }
 
 .nav-top {
-  align-items: flex-start;
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -133,6 +133,8 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between; }
+    .nav-top .navbar-collapse > nav .nav {
+      flex-direction: column; }
     .nav-top .navbar-collapse .navbar-toggler {
       display: block; }
 
@@ -148,8 +150,23 @@
       flex: 1;
       flex-direction: row;
       position: static; }
+      .nav-top .navbar-collapse > nav .nav {
+        flex-direction: row; }
+        .nav-top .navbar-collapse > nav .nav .dropdown-menu {
+          position: absolute;
+          float: left; }
     .nav-top .navbar-toggler {
       display: none; } }
+
+@media (max-width: 767px) {
+  .nav-top .navbar-collapse > nav .nav .dropdown .dropdown-menu {
+    border: none !important;
+    display: block !important;
+    position: static !important;
+    float: none !important;
+    transform: none !important; }
+  .nav-top .navbar-collapse.flatten > nav .nav .dropdown .dropdown-toggle {
+    display: none; } }
 
 .version {
   font-size: 0.65rem; }

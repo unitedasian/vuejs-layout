@@ -1,8 +1,9 @@
 <template>
   <component
-    :app_version="app_version"
+    :appVersion="appVersion"
     :enableSidebar="enableSidebar"
     :enableSidebarToggle="enableSidebarToggle"
+    :flatten="flatten"
     :is="layout">
     <template slot="_logo">
       <slot name="logo" />
@@ -34,12 +35,21 @@ export default {
     this.$store.registerModule('$_layout', store)
   },
 
-  props: [
-    'app_version',
-    'enableSidebar',
-    'enableSidebarToggle',
-    'layout',
-    'sidebar'
-  ]
+  props: {
+    appVersion: {
+    },
+    enableSidebar: {
+      default: true
+    },
+    enableSidebarToggle: {
+      default: true
+    },
+    flatten: {
+      default: true
+    },
+    layout: {
+      default: Flex
+    }
+  }
 }
 </script>

@@ -4,7 +4,7 @@
     <nav class="nav-brand">
       <slot name="__logo">LOGO</slot>
     </nav>
-    <div class="navbar-collapse collapse" :class="collapsed ? '' : 'show'">
+    <div class="navbar-collapse collapse" :class="css">
       <nav class="nav-center">
         <slot name="nav-center" />
       </nav>
@@ -35,6 +35,18 @@ export default {
     SidebarToggle
   },
 
+  computed: {
+    css () {
+      let classes = this.collapsed ? [] : [ 'show' ]
+
+      if (this.flatten) {
+        classes.push('flatten')
+      }
+
+      return classes.join(' ')
+    }
+  },
+
   data () {
     return {
       collapsed: true
@@ -47,7 +59,16 @@ export default {
     }
   },
 
-  props: ['enableSidebarToggle']
+  props: {
+    enableSidebarToggle: {
+      type: Boolean,
+      default: true
+    },
+    flatten: {
+      type: Boolean,
+      default: true
+    }
+  }
 }
 </script>
 
