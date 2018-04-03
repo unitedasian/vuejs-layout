@@ -70,6 +70,10 @@ export default {
 
 A component to be displayed as the top nav's `nav-brand` component.
 
+#### nav-center
+
+A component to be displayed as the top nav's centered nav. The Layout component expects this component to follow bootstrap's conventions for navs.
+
 #### nav-right
 
 A component to be displayed as the top nav's right-aligned nav. The Layout component expects this component to follow bootstrap's conventions for navs.
