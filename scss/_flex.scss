@@ -20,6 +20,7 @@
       display: none;
       flex-direction: column;
       justify-content: space-between;
+      min-width: $sidebar-width;
       padding-top: 2.5rem;
       position: relative;
       width: $sidebar-width;
@@ -88,7 +89,7 @@
       }
 
       > main {
-        padding-left: $padding-h-sm;
+        padding-left: $padding-h-xs;
       }
     }
   }

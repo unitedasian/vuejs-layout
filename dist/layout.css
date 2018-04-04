@@ -18,6 +18,7 @@
       display: none;
       flex-direction: column;
       justify-content: space-between;
+      min-width: 13rem;
       padding-top: 2.5rem;
       position: relative;
       width: 13rem; }
@@ -61,7 +62,7 @@
   .flex.collapsed > .body > aside {
     display: none; }
   .flex.collapsed > .body > main {
-    padding-left: 2rem; }
+    padding-left: 0.5rem; }
   .flex.expanded > .body > aside {
     display: flex; }
   .flex.expanded > .body > main {
