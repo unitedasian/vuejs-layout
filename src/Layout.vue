@@ -48,9 +48,7 @@ export default {
       default: true
     },
     layout: {
-      default () {
-        return Flex
-      }
+      default: () => Flex
     }
   }
 }
