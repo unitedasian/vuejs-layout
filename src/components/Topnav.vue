@@ -6,7 +6,7 @@
     </nav>
     <div class="navbar-collapse collapse" :class="css">
       <nav class="nav-center">
-        <slot name="nav-center" />
+        <slot name="__nav-center" />
       </nav>
       <nav class="nav-right">
         <slot name="__nav-right">

@@ -70,6 +70,10 @@ export default {
 
 A component to be displayed as the top nav's `nav-brand` component.
 
+#### main
+
+The content fo the page.  This should include `<router-view />`.
+
 #### nav-center
 
 A component to be displayed as the top nav's centered nav. The Layout component expects this component to follow bootstrap's conventions for navs.
@@ -77,10 +81,6 @@ A component to be displayed as the top nav's centered nav. The Layout component 
 #### nav-right
 
 A component to be displayed as the top nav's right-aligned nav. The Layout component expects this component to follow bootstrap's conventions for navs.
-
-#### notify
-
-A placeholder for toaster notifications.
 
 #### sidebar
 

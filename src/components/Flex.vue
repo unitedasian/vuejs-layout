@@ -9,6 +9,9 @@
         <template slot="__logo">
           <slot name="_logo" />
         </template>
+        <template slot="__nav-center">
+          <slot name="_nav-center" />
+        </template>
         <template slot="__nav-right">
           <slot name="_nav-right" />
         </template>
@@ -26,9 +29,7 @@
       </aside>
 
       <main id="main">
-        <router-view></router-view>
-
-        <slot name="_notify" />
+        <slot name="_main" />
       </main>
     </section>
 
