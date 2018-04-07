@@ -26,7 +26,7 @@
       width: $sidebar-width;
 
       .vue-affix {
-        width: $sidebar-width;
+        width: $sidebar-width - $padding-h-xs;
 
         &.affix {
           top: 111px!important;
@@ -123,6 +123,10 @@
     > .body {
       > aside {
         padding-left: $padding-h-sm;
+
+        .vue-affix {
+          width: $sidebar-width - $padding-h-sm;
+        }
       }
 
       > main {

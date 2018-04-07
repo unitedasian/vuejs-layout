@@ -1,6 +1,6 @@
 {
   "name": "@uam/vuejs-layout",
-  "version": "0.5.4",
+  "version": "0.5.3",
   "description": "Vuejs layout component",
   "homepage": "https://github.com/unitedasian/vuejs-layout",
   "main": "dist/index.js",

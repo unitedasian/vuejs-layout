@@ -23,7 +23,7 @@
       position: relative;
       width: 13rem; }
       .flex > .body > aside .vue-affix {
-        width: 13rem; }
+        width: 12.5rem; }
         .flex > .body > aside .vue-affix.affix {
           top: 111px !important; }
         .flex > .body > aside .vue-affix .sidebar {
@@ -78,6 +78,8 @@
       min-height: 4rem; }
     .flex > .body > aside {
       padding-left: 2rem; }
+      .flex > .body > aside .vue-affix {
+        width: 11rem; }
     .flex > .body > main {
       padding: 0.5rem 2rem; }
     .flex.collapsed > .body > aside {
