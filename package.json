@@ -1,12 +1,12 @@
 {
-  "name": "uam-vuejs-layout",
-  "version": "0.4.8",
-  "description": "Vuejs layout",
+  "name": "@uam/vuejs-layout",
+  "version": "0.5.2",
+  "description": "Vuejs layout component",
+  "homepage": "https://github.com/unitedasian/vuejs-layout",
   "main": "dist/index.js",
   "repository": "git@gitlab.united-asian.com:vuejs/user.git",
   "author": "Olivier Pichon <op@united-asian.com>",
-  "license": "proprietary",
-  "private": true,
+  "license": "MIT",
   "scripts": {
     "build": "rm -rf ./dist/* && NODE_ENV=production webpack --colors --hide-modules",
     "dev": "rm -rf ./dist/* && webpack --colors --hide-modules",
