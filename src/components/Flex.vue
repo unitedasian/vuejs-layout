@@ -28,7 +28,7 @@
       <main id="main">
         <router-view></router-view>
 
-        <slot name="_notification" ></slot>
+        <slot name="_notify" />
       </main>
     </section>
 
