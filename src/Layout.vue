@@ -17,6 +17,9 @@
     <template slot="_footer">
       <slot name="footer" />
     </template>
+    <template slot="_notify">
+      <slot name="notify" ></slot>
+    </template>
   </component>
 </template>
 

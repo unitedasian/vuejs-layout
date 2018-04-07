@@ -78,6 +78,10 @@ A component to be displayed as the top nav's centered nav. The Layout component 
 
 A component to be displayed as the top nav's right-aligned nav. The Layout component expects this component to follow bootstrap's conventions for navs.
 
+#### notify
+
+A placeholder for toaster notifications.
+
 #### sidebar
 
 A component to be displayed as the layout's sidebar.
