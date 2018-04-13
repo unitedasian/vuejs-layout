@@ -9,6 +9,7 @@ const Plugin = {
    */
   install: (Vue) => {
     Vue.use(Affix)
+
     Vue.component('Layout', Layout)
   }
 }

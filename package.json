@@ -17,12 +17,12 @@
     "vue-affix": "^0.2.4"
   },
   "peerDependencies": {
-    "bootstrap": "^4.0.0-beta.2",
+    "bootstrap": "^4.0.0",
     "bootstrap-vue": "^1.4.0",
     "font-awesome": "^4.7.0",
     "vue": "^2.5.13",
     "vue-i18n": "^7.3.3",
-    "vue-ls": "^2.3.3",
+    "vue-ls": "^3.0.3",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
@@ -36,21 +36,21 @@
     "css-loader": "^0.28.11",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
-    "eslint-friendly-formatter": "^4.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
     "eslint-loader": "^2.0.0",
-    "eslint-plugin-html": "^4.0.2",
-    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-html": "^4.0.3",
+    "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.7.0",
     "eslint-plugin-standard": "^3.0.1",
     "extract-text-webpack-plugin": "^3.0.2",
     "node-sass": "^4.8.3",
-    "sass-loader": "^6.0.7",
+    "sass-loader": "^7.0.0",
     "style-loader": "^0.20.3",
     "vue-loader": "^14.2.2",
     "vue-style-loader": "^4.1.0",
     "vue-template-compiler": "^2.5.16",
-    "webpack": "^3.10.0",
+    "webpack": "^3.11.0",
     "webpack-merge": "^4.1.2"
   }
 }
