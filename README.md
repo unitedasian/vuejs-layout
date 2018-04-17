@@ -9,7 +9,7 @@ Main component. Import the component in your app's `main.js`, then include it in
 ``` js
 # main.js
 
-import Layout from 'uam-vuejs-layout'
+import Layout from '@uam/vuejs-layout'
 Vue.use(Layout)
 ```
 
