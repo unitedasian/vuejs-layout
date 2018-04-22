@@ -57,6 +57,8 @@ export default {
     }
   },
 
+  name: 'Flex',
+
   props: {
     appVersion: {
     },
